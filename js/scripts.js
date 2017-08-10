@@ -10,6 +10,7 @@ $(document).ready(function() {
 
     if(x.match(/^\D+$/) || y.match(/^\D+$/) || z.match(/^\D+$/)) {
      alert("Please enter only numbers...");
+      return;
    } if (xx == yy && xx == zz && yy == zz) {
      alert('Equilateral');
    } else if ((xx + yy) <= zz || (xx + zz) <= yy || (zz + yy) <= xx) {
