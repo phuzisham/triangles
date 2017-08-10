@@ -13,6 +13,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-4">
+          <h2 id="w">Triangle Calculator</h2>
           <form id="tri">
             <div class="form-group">
               <label for="side1">Enter length of side 1.</label>
@@ -26,11 +27,34 @@
               <label for="side3">Enter length of side 3.</label>
               <input type="text" id="side3" class="form-control">
             </div>
-            <button class="btn btn-success" type='submit'>Submit</button>
+            <button class="btn btn-success" type='submit'>Make a Triangle!</button>
           </form>
         </div>
         <div class="col-sm-8" id="result">
+          <div id="equil">
+            <img src="img/equil.png"><br>
+            <h2> Equilateral Triangle </h2>
+            <p> In geometry, an equilateral triangle is a triangle in which all three sides are equal. In the familiar Euclidean geometry, equilateral triangles are also equiangular; that is, all three internal angles are also congruent to each other and are each 60°. They are regular polygons, and can therefore also be referred to as regular triangles. </p>
+          </div>
+          <div id="isos">
+            <img src="img/isos.png"><br>
+            <h2> Isosceles Triangle </h2>
+            <p> In geometry, an isosceles triangle is a triangle that has two sides of equal length. Sometimes it is specified as having two and only two sides of equal length, and sometimes as having at least two sides of equal length, the latter version thus including the equilateral triangle as a special case.
 
+            By the isosceles triangle theorem, the two angles opposite the equal sides are themselves equal, while if the third side is different then the third angle is different.
+
+            By the Steiner–Lehmus theorem, every triangle with two angle bisectors of equal length is isosceles. </p>
+          </div>
+          <div id="scal">
+            <img src="img/scal.png"><br>
+            <h2> Scalene Triangle </h2>
+            <p>Scalene triangles are triangles where each side is a different length. They are unusual in that the are defined by what they are not. Most triangles drawn at random would be scalene. The interior angles of a scalene triangle are always all different. The converse of this is also true - If all three angles are different, then the triangle is scalene, and all the sides are different lengths.</p>
+          </div>
+          <div id="wrong">
+            <img src="img/wrong.png"><br>
+            <h2> That aint a triangle! </h2>
+            <p><a target="_blank" href="http://lmgtfy.com/?q=definition+of+a+triangle">Click here for more information on triangles.</a></p>
+          </div>
         </div>
       </div>
     </div>

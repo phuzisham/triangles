@@ -2,3 +2,43 @@
   width: 100%;
   margin-top: 20px;
 }
+
+#w {
+  margin-top: 80px;
+}
+
+img {
+  max-width: 90%
+}
+#equil {
+  display: none;
+  margin: 40px 0px 0px 200px;
+}
+
+#isos {
+  display: none;
+  margin: 40px 0px 0px 200px;
+}
+
+#isos img {
+  width: 200px;
+}
+
+#scal {
+  display: none;
+  margin: 40px 0px 0px 200px;
+}
+
+#wrong {
+  display: none;
+  margin: 40px 0px 0px 200px;
+  width: 300px;
+}
+
+body {
+  background-color: #aaf2ff;
+}
+
+a.hover: {
+  text-decoration: underline;
+}

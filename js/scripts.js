@@ -1,6 +1,6 @@
 $(document).ready(function() {
-  $("form#tri").submit(function() {
-
+  $("form#tri").submit(function(event) {
+    event.preventDefault();
     var x = $("#side1").val();
     var y = $("#side2").val();
     var z = $("#side3").val();
@@ -12,13 +12,25 @@ $(document).ready(function() {
      alert("Please enter only numbers...");
       return;
    } if (xx == yy && xx == zz && yy == zz) {
-     alert('Equilateral');
+     $("#equil").show();
+     $("#wrong").hide();
+     $("#isos").hide();
+     $("#scal").hide();
    } else if ((xx + yy) <= zz || (xx + zz) <= yy || (zz + yy) <= xx) {
-     alert('That aint a triangle!');
+     $("#wrong").show();
+     $("#equil").hide();
+     $("#isos").hide();
+     $("#scal").hide();
    } else if (xx == yy || xx == zz || yy == zz) {
-     alert('Isosceles')
+     $("#isos").show();
+     $("#equil").hide();
+     $("#wrong").hide();
+     $("#scal").hide();
    } else {
-     alert('Scalene');
+     $("#scal").show();
+     $("#equil").hide();
+     $("#wrong").hide();
+     $("#isos").hide();
    }
   });
 });
