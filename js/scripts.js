@@ -13,24 +13,16 @@ $(document).ready(function() {
       return;
    } if (xx == yy && xx == zz && yy == zz) {
      $("#equil").show();
-     $("#wrong").hide();
-     $("#isos").hide();
-     $("#scal").hide();
+     $("#wrong, #isos, #scal").hide();
    } else if ((xx + yy) <= zz || (xx + zz) <= yy || (zz + yy) <= xx) {
      $("#wrong").show();
-     $("#equil").hide();
-     $("#isos").hide();
-     $("#scal").hide();
+     $("#equil, #isos, #scal").hide();
    } else if (xx == yy || xx == zz || yy == zz) {
      $("#isos").show();
-     $("#equil").hide();
-     $("#wrong").hide();
-     $("#scal").hide();
+     $("#equil, #wrong, #scal").hide();
    } else {
      $("#scal").show();
-     $("#equil").hide();
-     $("#wrong").hide();
-     $("#isos").hide();
+     $("#equil, #wrong, #isos").hide();
    }
   });
 });

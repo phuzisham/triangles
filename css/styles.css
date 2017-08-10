@@ -12,12 +12,12 @@ img {
 }
 #equil {
   display: none;
-  margin: 40px 0px 0px 200px;
+  margin: 80px 0px 0px 200px;
 }
 
 #isos {
   display: none;
-  margin: 40px 0px 0px 200px;
+  margin: 80px 0px 0px 200px;
 }
 
 #isos img {
@@ -26,12 +26,12 @@ img {
 
 #scal {
   display: none;
-  margin: 40px 0px 0px 200px;
+  margin: 80px 0px 0px 200px;
 }
 
 #wrong {
   display: none;
-  margin: 40px 0px 0px 200px;
+  margin: 80px 0px 0px 200px;
   width: 300px;
 }
 
@@ -41,4 +41,8 @@ body {
 
 a.hover: {
   text-decoration: underline;
+}
+
+p {
+  font-size: 25px;
 }
